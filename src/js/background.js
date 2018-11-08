@@ -11,7 +11,7 @@ const horizLines = [];
 
 const vertInterval = width / numLinesVert;
 const horizInterval = height / numLinesHoriz;
-const strokeWidth = 75;
+const strokeWidth = 20;
 const movementSpeed = 0.5;
 
 function getXPosition(screenCoordX) {
