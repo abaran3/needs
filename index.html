@@ -1,44 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8">
+    <title>NNE</title>
+    <meta name="description" content="Nations' Needs Endeavour" />
+    <meta name="author" content="too much fun" />
 
-  <title>NNE</title>
-  <meta name="description" content="Nations' Needs Endeavour">
-  <meta name="author" content="too much fun">
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.3.1.min.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-  <script src="jquery-3.3.1.min.js"></script>
+  <body>
+    <script src="main.js"></script>
+    <img src="http://placekitten.com/40/60" alt="catlogo" id="logo" />
+    <p id="introtext">text</p>
 
-</head>
-
-<body>
-  <script src="main.js"></script>
-  <img src="http://placekitten.com/40/60" alt="catlogo" id="logo">
-  <p id="introtext">text</p>
-
-  <div id="needs">
-
-    <div id="box_div">
+    <div id="box_needs">
       <h1>you can enter your needs:</h1>
-      <!-- <p id="box_p">more text</p> -->
-      <input type="text" name="fname" id="textbox"><br>
-      <!-- <input type="submit" value="Submit" id="submitbutton"> -->
-      <button type="button" onclick="getNeeds()" id="submitbutton">submit your
-        needs</button>
-      <h1> </h1>
+      <input
+        type="text"
+        name="fname"
+        id="textbox"
+        placeholder="you can enter your needs"
+      /><br />
+      <button type="button" onclick="getNeeds()" id="submitbutton">
+        submit your needs
+      </button>
+      <h1></h1>
     </div>
-  </div>
 
-  <div id="nationtext">
-    current nation receiving your needs current nation receiving your needs
-    current nation receiving your needs current nation receiving your needs
-    current nation receiving your needs
-
-  </div>
-
-</body>
-
+    <div id="nationtext">
+      current nation receiving your needs current nation receiving your needs
+      current nation receiving your needs current nation receiving your needs
+      current nation receiving your needs
+    </div>
+  </body>
 </html>
