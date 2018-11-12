@@ -18,7 +18,6 @@ function getXPosition(screenCoordX) {
   const h = screenCoordX;
   const center = width / 2.0;
   const angle = ((screenCoordX - center) / width) * Math.PI;
-  console.log((angle / Math.PI) * 180);
 
   if (angle > Math.PI / 2.0) {
     return (Math.sin(angle - Math.PI) * width) / 2.0 + center;
@@ -33,7 +32,6 @@ function getYPosition(screenCoordY) {
   const h = screenCoordY;
   const center = height / 2.0;
   const angle = ((screenCoordY - center) / height) * Math.PI;
-  console.log((angle / Math.PI) * 180);
 
   if (angle > Math.PI / 2.0) {
     return (Math.sin(angle - Math.PI) * height) / 2.0 + center;
@@ -72,7 +70,6 @@ function redrawLines(mouseX, mouseY) {
       index * vertInterval + mX * width * movementSpeed
     );
     vertLines[index].x(xPos);
-    console.log(vertLines);
   }
   // Horiz Lines
   for (let index = 0; index < numLinesHoriz; index++) {
