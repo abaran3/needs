@@ -1,7 +1,13 @@
-var latestNeed;
+let fader = null;
+$('#popup').hide();
 function getNeeds() {
-  alert(`your needs have been submitted to ${randomCountry()}`);
-  latestNeed = $(this).val();
+  if (fader) clearTimeout(fader);
+  let latestNeed = $('#textbox').val();
+  let message = `Your need ${latestNeed} has been submitted to ${randomCountry()}`;
+  $('#popup')
+    .text(message)
+    .fadeIn();
+  fader = window.setTimeout(() => $('#popup').fadeOut(), 2000);
 }
 
 function randomCountry() {
