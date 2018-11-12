@@ -14,21 +14,22 @@
   </head>
 
   <body>
-    <img src="http://placekitten.com/40/60" alt="catlogo" id="logo" />
     <div id="background"></div>
+    <img src="http://placekitten.com/40/60" alt="catlogo" id="logo" />
     <p id="introtext">text</p>
 
-    <div id="needs">
-      <div id="box_div">
-        <h1>you can enter your needs:</h1>
-        <!-- <p id="box_p">more text</p> -->
-        <input type="text" name="fname" id="textbox" /><br />
-        <!-- <input type="submit" value="Submit" id="submitbutton"> -->
-        <button type="button" onclick="getNeeds()" id="submitbutton">
-          submit your needs
-        </button>
-        <h1></h1>
-      </div>
+    <div id="box_needs">
+      <h1>you can enter your needs:</h1>
+      <input
+        type="text"
+        name="fname"
+        id="textbox"
+        placeholder="you can enter your needs"
+      /><br />
+      <button type="button" onclick="getNeeds()" id="submitbutton">
+        submit your needs
+      </button>
+      <h1></h1>
     </div>
 
     <div id="nationtext">
