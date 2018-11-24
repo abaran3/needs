@@ -3,7 +3,7 @@ const height = window.innerHeight;
 const aspect = width / height;
 var draw = SVG('background').size(width, height);
 
-const numLinesVert = 10;
+const numLinesVert = 20;
 const numLinesHoriz = numLinesVert / aspect;
 
 const vertLines = [];
@@ -11,7 +11,7 @@ const horizLines = [];
 
 const vertInterval = width / numLinesVert;
 const horizInterval = height / numLinesHoriz;
-const strokeWidth = 20;
+const strokeWidth = 2;
 const movementSpeed = 0.5;
 
 function getXPosition(screenCoordX) {
@@ -47,7 +47,7 @@ for (let index = 0; index < numLinesVert; index++) {
   const xPos = getXPosition(index * vertInterval);
   const line = draw
     .line(xPos, 0, xPos, height)
-    .stroke({ width: strokeWidth, color: '#ccc' });
+    .stroke({ width: strokeWidth, color: 'white' });
   vertLines.push(line);
 }
 
@@ -56,7 +56,7 @@ for (let index = 0; index < numLinesHoriz; index++) {
   const yPos = getYPosition(index * horizInterval);
   const line = draw
     .line(0, yPos, width, yPos)
-    .stroke({ width: strokeWidth, color: '#ccc' });
+    .stroke({ width: strokeWidth, color: 'white' });
   horizLines.push(line);
 }
 

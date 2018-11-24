@@ -26,7 +26,7 @@ h1 {
   width: 96%;
   padding: 2%;
   padding-block-end: 4%;
-  background-color: rgb(43, 50, 50, 155);
+  background-color: #181819;
 }
 
 #popup {
@@ -61,6 +61,8 @@ h1 {
   color: #555;
   font-family: Arial, Helvetica, sans-serif;
   /* border-radius: 3px; */
+
+  
 }
 
 #submitbutton {
@@ -84,15 +86,27 @@ h1 {
 
 #nationtext {
   position: absolute;
+ background-color: rgba(255, 255, 255, 0.85);
   left: 65%;
-  top: 75%;
+  top: 70%;
+  right: 2%;
   padding: 2%;
+  padding-block-end: 4%;
+  font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(169, 166, 166);
+  /* color:  #555; */
+  color: rgb(43, 50, 50, 155);
+  font-weight: bold;
+  text-align: center;  
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  box-shadow: 5px 10px;  
 }
 
 #background {
-  background-color: rgb(250, 214, 54);
+  background-image: url("background_img.jpg"); /* image source: https://www.behance.net/gallery/14698223/Folded-paper-textures-volumes-I-and-II */
   position: absolute;
   margin: none;
   border: none;
